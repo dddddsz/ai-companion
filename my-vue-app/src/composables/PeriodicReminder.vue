@@ -123,6 +123,7 @@ function startTimer() {
 
     timer = setInterval(() => {
         log('定时器触发')
+        log(`预计下次触发时间: ${new Date(Date.now() + intervalMs).toLocaleTimeString()}`)
         sendNotification()
     }, intervalMs)
 }

@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import Page from './components/Page.vue'
 import MessageController from './components/MessageController.vue'
-import PeriodicReminder from './composables/PeriodicReminder.vue';
+import PeriodicReminder from './components/PeriodicReminder.vue';
 </script>
 
 <template>

@@ -31,7 +31,7 @@ const props = defineProps({
     },
     requireInteraction: {
         type: Boolean,
-        default: false    // 通知是否常驻直到用户点击
+        default: false    // notifition通知是否常驻直到用户点击
     },
     silent: {
         type: Boolean,
@@ -208,13 +208,13 @@ onMounted(async () => {
     log('组件挂载')
     await requestPermission()   // 请求权限（仅一次）
     startTimer()               // 启动定时器（无论权限结果如何都启动，因为权限可能在之后变为 granted）
-    exposeCountdownToConsole()
+    // exposeCountdownToConsole()
 })
 
 onUnmounted(() => {
     log('组件卸载，清理定时器')
     stopTimer()
-    removeCountdownFromConsole()
+    // removeCountdownFromConsole()
 })
 </script>
 
